@@ -1,4 +1,4 @@
-# Arbeidskrav 1 – Programmering
+# Soltider med Python og API-er
 
 ## Hva programmet gjør
 
