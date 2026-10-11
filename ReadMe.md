@@ -16,6 +16,7 @@ Programmet bruker to API-kilder:
 API-nøkkelen lagres med Python keyring og hentes ved kjøring.
 Den ligger ikke i kildekoden.
 
+### NB! Nøkkelen følger ikke med når prosjektet lastes ned fra GitHub.
 
 ## Instruksjonene nedenfor gjelder Windows. 
 Åpne en terminal i prosjektmappen før du kjører kommandoene.
@@ -45,8 +46,6 @@ Lagre nøkkelen på din egen PC:
 
 
 Lim inn API-nøkkelen
-
-NB! Nøkkelen følger ikke med når prosjektet lastes ned fra GitHub.
 
 ## Kjør programmet
 
