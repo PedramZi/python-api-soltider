@@ -1,5 +1,27 @@
 # Soltider med Python og API-er
 
+## Endringer
+
+### videreutvikling av prosjektet
+## Felles kode for API-kall
+
+Tidligere hentet og tolket "main.py" svarene fra begge API-ene. Nå håndterer
+"ApiBase" HTTP-kallene og leser svarene som JSON. Hver API kode tolker
+deretter dataene fra sin egen kilde.
+
+- "GeoApi" lager en liste med "GeoData" objekter, ett for hvert sted som matcher etter søket. Hvert objekt inneholder bynavn og koordinater.
+- "SunApi" samler soloppgang, solnedgang og tidssone for ett sted i et "SunData" objekt.
+
+Dette gjør det enklere å endre hvordan programmet henter og leser data.
+Tidsgrensen for begge API-kallene kan justeres ett sted, i "ApiBase".
+Hvis OpenWeather endrer navnet på et koordinatfelt, holder det å oppdatere
+"GeoData". Motor koden som leser soltidene, kan brukes som før.
+
+Tolkingen av API-svarene kan også testes uten nettverk eller API-nøkkel.
+"GeoApi" ble testet med to eksempelsteder for å sjekke at både Oslo og Bergen
+kom med i resultatet. Til slutt ble hele programmet kjørt mot begge API-ene
+for Oslo, Kongsberg og Bergen.
+
 ## Hva programmet gjør
 
 Programmet henter koordinater og dagens soltider for Oslo, Kongsberg
