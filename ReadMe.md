@@ -76,4 +76,4 @@ Lim inn API-nøkkelen
 Programmet skriver resultatene for de tre byene til terminalen.
 Soltidene vises i tidssonen som returneres av Sunrise-Sunset.
 
-![Resultat](Resultat.png)
+![Resultat](Resultat2.png)
